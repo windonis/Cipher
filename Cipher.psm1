@@ -46,7 +46,7 @@ function Set-Cipher
 
 }
 
-### function Get-CleanString
+### function Get-CleanString {}
 
 # Export only the functions using PowerShell standard verb-noun naming.
 # Be sure to list each exported functions in the FunctionsToExport field of the module manifest file.
