@@ -1,7 +1,7 @@
 # Basic-Cipher
 
 ### Basic String Cipher
-#### This is a simple encoder. Like Caesar Cipher. I plan to improve by adding the level scheme. Currently no return option :)
+#### This is a simple encoder. Like Caesar Cipher. I plan to improve by adding the level scheme. Currently has return option :)
 
 ```powershell
 D:\Cipher> Import-Module .\Cipher.psm1
