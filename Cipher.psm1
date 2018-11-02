@@ -46,9 +46,39 @@ function Set-Cipher
 
 }
 
-### function Get-CleanString {}
+function Get-CleanString 
+{
+    begin
+    {
+        $inp = Read-Host "Give Me Encode Text"
+        $inp = $inp.ToLower()
+    }
+    process 
+    {
+        $data = @()
+        $result = ""
+        $inp.Split(" ") | ForEach-Object { $data += $_ }
+
+        $max = $data[0].Length
+        $totalElement = $data.Length
+        
+        for ($i = 0; $i -le ($max - 1); $i++) 
+        {
+            for ($j = 0; $j -le ($totalElement - 1 ); $j++) 
+            {
+                $result = $result + $data[$j][$i]
+            }
+        }   
+    
+   }
+   end 
+   {
+        return $result
+   }
+}
 
 # Export only the functions using PowerShell standard verb-noun naming.
 # Be sure to list each exported functions in the FunctionsToExport field of the module manifest file.
 # This improves performance of command discovery in PowerShell.
 Export-ModuleMember -Function "Set-Cipher"
+Export-ModuleMember -Function "Get-CleanString"
