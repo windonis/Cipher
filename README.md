@@ -15,6 +15,9 @@ D:\Cipher> Set-Cipher
 Give Me Somethings: Happy SysAdmin Day
 hyan asdd pyma psiy
 D:\Cipher>
+D:\Cipher> Get-CleanString
+Give Me Encode Text: hyan asdd pyma psiy
+happysysadminday
 ```
 
 - [ ] Adding the degree of difficulty.
