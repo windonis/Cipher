@@ -18,4 +18,4 @@ D:\Cipher>
 ```
 
 - [ ] Adding the degree of difficulty.
-- [ ] Adding a decoding module.
+- [X] Adding a decoding module.
