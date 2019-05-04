@@ -36,4 +36,4 @@ litgnitt tsmremyh tomoagse itumisid eyrpfnis xnimynep uppeltdn
 PS /root> 
 ```
 
--[] Adding decoding with level properties. Now just decoding easy level text.
+-[ ] Adding decoding with level properties. Now just decoding easy level text.
