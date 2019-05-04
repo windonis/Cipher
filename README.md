@@ -20,5 +20,5 @@ Give Me Encode Text: hyan asdd pyma psiy
 happysysadminday
 ```
 
-- [ ] Adding the degree of difficulty.
+- [x] Adding the degree of difficulty.
 - [X] Adding a decoding module.
