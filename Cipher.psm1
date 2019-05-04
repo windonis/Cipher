@@ -1,15 +1,14 @@
-# Implement your module commands in this script.
-function Set-Cipher
+function Encyp 
 {
     [CmdletBinding()]
-    param
+    param 
     (
-       [ValidateSet('Easy','Medium','Hard')]$level
+        $inputText    
     )
 
     begin
     {
-        $inp = Read-Host "Give Me Somethings"
+        $inp = $inputText
         $inp = $inp.Replace(' ','')
         $inp = $inp.ToLower()
     }
@@ -45,7 +44,35 @@ function Set-Cipher
     }
 
 }
+function Set-Cipher
+{
+    [CmdletBinding()]
+    param
+    (
+       [ValidateSet('Easy','Medium','Hard')]$level 
+    )
 
+    $inputText = Read-Host -Prompt "Give me something"
+    if ($level -eq "Easy")
+    {
+        $result = Encyp -inputText $inputText
+        return $result
+    }
+    elseif ($level -eq "Medium") 
+    {
+        $result = Encyp -inputText $inputText
+        $result = Encyp -inputText $result
+        return $result    
+    }
+    else {
+        $result = Encyp -inputText $inputText
+        $result = Encyp -inputText $result
+        $result = Encyp -inputText $result
+        return $result 
+    }
+    
+
+}
 function Get-CleanString 
 {
     begin
